@@ -1,0 +1,77 @@
+/* line 1, ../../../src/scss/opener_image.scss */
+.album-item {
+  float: left;
+  margin: 25px;
+  /*
+  @include narrower-than(320px) {
+    margin: 0;
+  }
+  */
+}
+/* line 9, ../../../src/scss/opener_image.scss */
+.album-item a {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+}
+/* line 18, ../../../src/scss/opener_image.scss */
+.album-item a .thumbnail {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* line 23, ../../../src/scss/opener_image.scss */
+.album-item a .title {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 33, ../../../src/scss/opener_image.scss */
+.image-viewer {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+/* line 37, ../../../src/scss/opener_image.scss */
+.image-viewer .cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 42, ../../../src/scss/opener_image.scss */
+.image-viewer .image-container {
+  vertical-align: middle;
+  width: 70%;
+}
+/* line 45, ../../../src/scss/opener_image.scss */
+.image-viewer .image-container img {
+  max-width: 100%;
+}
+/* line 49, ../../../src/scss/opener_image.scss */
+.image-viewer .previous {
+  display: inline-block;
+  /*
+  @include with-hdpi(icons, prev, yes);
+  &:hover {
+    @include with-hdpi(icons, prev_hover, yes);
+  }
+  */
+}
+/* line 58, ../../../src/scss/opener_image.scss */
+.image-viewer .next {
+  display: inline-block;
+  /*
+  @include with-hdpi(icons, next, yes);
+  &:hover {
+    @include with-hdpi(icons, next_hover, yes);
+  }
+  */
+}

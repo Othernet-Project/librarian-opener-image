@@ -1,0 +1,2 @@
+recursive-include librarian_opener_image *
+recursive-exclude tests *

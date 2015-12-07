@@ -1,0 +1,67 @@
+.album-item {
+  float: left;
+  margin: 25px;
+  /*
+  @include narrower-than(320px) {
+    margin: 0;
+  }
+  */
+  a {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    .thumbnail {
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    .title {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.image-viewer {
+  height: 100%;
+  width: 100%;
+  display: table;
+  .cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .image-container {
+    vertical-align: middle;
+    width: 70%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .previous {
+    display: inline-block;
+    /*
+    @include with-hdpi(icons, prev, yes);
+    &:hover {
+      @include with-hdpi(icons, prev_hover, yes);
+    }
+    */
+  }
+  .next {
+    display: inline-block;
+    /*
+    @include with-hdpi(icons, next, yes);
+    &:hover {
+      @include with-hdpi(icons, next_hover, yes);
+    }
+    */
+  }
+}
