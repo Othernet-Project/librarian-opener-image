@@ -20,3 +20,4 @@
     % endfor
     </ul>
 </div>
+<script type="text/javascript" src="${assets['js/album']}"></script>

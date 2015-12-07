@@ -35,28 +35,28 @@
 }
 
 /* line 33, ../../../src/scss/opener_image.scss */
-.image-viewer {
+.opener-image {
   height: 100%;
   width: 100%;
   display: table;
 }
 /* line 37, ../../../src/scss/opener_image.scss */
-.image-viewer .cell {
+.opener-image .cell {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 /* line 42, ../../../src/scss/opener_image.scss */
-.image-viewer .image-container {
+.opener-image .image-container {
   vertical-align: middle;
   width: 70%;
 }
 /* line 45, ../../../src/scss/opener_image.scss */
-.image-viewer .image-container img {
+.opener-image .image-container img {
   max-width: 100%;
 }
 /* line 49, ../../../src/scss/opener_image.scss */
-.image-viewer .previous {
+.opener-image .previous {
   display: inline-block;
   /*
   @include with-hdpi(icons, prev, yes);
@@ -66,7 +66,7 @@
   */
 }
 /* line 58, ../../../src/scss/opener_image.scss */
-.image-viewer .next {
+.opener-image .next {
   display: inline-block;
   /*
   @include with-hdpi(icons, next, yes);

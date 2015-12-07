@@ -1,9 +1,18 @@
 ((window, $) ->
   'use strict'
+  container = $ '.opener-image'
   urls = JSON.parse($('#image-urls').html()).urls
   imgEl = $ '.image-container img'
   prevButton = $ '.previous'
   nextButton = $ '.next'
+  backButton = $ '.show-album .back'
+
+  showAlbum = (e) ->
+    e.preventDefault()
+    url = $(this).attr('href')
+    res = $.get url
+    res.done (data) ->
+      container.replaceWith(data)
 
   loadImage = (imgIndex) ->
     if imgIndex < 0 || imgIndex >= urls.length
@@ -34,4 +43,5 @@
 
   prevButton.click prevImage
   nextButton.click nextImage
+  backButton.click showAlbum
 ) this, this.jQuery
